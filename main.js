@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let modelBaseRotationX = 0.5;
     let modelBaseZ = -1;
 
-    loader.load("/models/just_a_girl.glb", (gltf) => {
+    loader.load("models/just_a_girl.glb", (gltf) => {
         model = gltf.scene;
 
         const box = new THREE.Box3().setFromObject(model);
